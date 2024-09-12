@@ -39,7 +39,7 @@ switch (answer) {
         break;
 }
 
-
+//#region function
 function addition(firstNumber, secondNumber) {
     return firstNumber + secondNumber;
 }
@@ -55,3 +55,4 @@ function multiplication(firstNumber, secondNumber) {
 function division(firstNumber, secondNumber) {
      return firstNumber / secondNumber;
 }
+//#endregion
