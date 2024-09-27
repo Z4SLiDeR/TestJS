@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Formulaire</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        *,
+        *::before,
+        *::after {
+            box-sizing: inherit;
+        }
+        
+        html {
+            box-sizing: border-box;
+            font-size: 62.5%;
+        }
+        
+        body {
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 400;
+            line-height: 2.5rem;
+            color: #fff;
+            background-color: #000;
+            min-height: 100rem;
+            font-size: 2rem;
+        }
+        
+        form {
+            margin: auto;
+            margin-top: 2rem;
+            width: 420px;
+            padding: 1.5rem;
+            border: 2px solid #fff;
+            border-radius: 1rem;
+        }
+        
+        form p {
+            margin-top: 1rem;
+        }
+        
+        input,
+        select,
+        textarea,
+        button {
+            font-size: 2rem;
+        }
+        
+        label {
+            display: block;
+        }
+        
+        #labPnom {
+            background-color: #000;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <form id="formu" enctype="text/plain" method="POST">
+        <p id="nom">
+            <label>Nom :</label>
+            <input name="Nom" size="30" />
+        </p>
+        <p id="prenom">
+            <label>Prénom :</label>
+            <input name="Prenom" size="30" />
+        </p>
+        <p id="pays">
+            <label>Pays : </label>
+            <select name="pays">
+	    <option value="belgique">Belgique</option>
+      <option value="france">France</option>
+      <option value="suisse">Suisse</option>
+      <option value="australie">Australie</option>
+    </select>
+        </p>
+        <p id="message">
+            <label>Message :</label>
+            <textarea name="Message" rows="5" cols="30"></textarea>
+        </p>
+        <p>
+            <input type="SUBMIT" value="Envoyer">
+        </p>
+    </form>
+    <script src="jq.js"></script>
+</body>
+</html>
