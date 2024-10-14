@@ -26,7 +26,8 @@ document.addEventListener('DOMContentLoaded', () => {
         displayErrorMessage(prenomField, 'Prénom manquant');
       } else {
         // Mettre la première lettre en majuscule et le reste en minuscules
-        prenomField.value = prenomField.value.charAt(0).toUpperCase() + prenomField.value.slice(1).toLowerCase();
+        //prenomField.value = prenomField.value.charAt(0).toUpperCase() + prenomField.value.slice(1).toLowerCase();
+        prenomField.value = capitalizeFirstLetter(prenomField.value);
       }
   
       // Modifie le message selon le pays sélectionné
